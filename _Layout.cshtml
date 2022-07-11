@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Leonardo Messias Alves</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyPersonalWebSite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/pygment_trac.css" />
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <meta property='og:title' content='Leonardo Messias' />
+    <meta name="image" property="og:image" content="https://messiasleonardo.github.io/.github.io/Imagens/IMG_0457.JPG">
+    <meta property='og:description' content='Acredito que a tecnologia tem o potencial de reverberar ideologias e ideias distintas no mundo, além de não limitar discussões sobre diversos assunto que movem indeterminadas áreas cotidianas, como um familiar que sente saudade, um professor querendo ensinar e assuntos empresariais que são de suma importância.' />
+    <meta property='og:url' content='https://messiasleonardo.github.io/.github.io/' />
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <p><img src="~/lib/Img/foto redonda.png"></p>
+            <h1>Leonardo Messias Alves</h1>
+            <p><img src="~/lib/Img/endereco-1.png">São Paulo, Brasil</p>
+            <p><img src="~/lib/Img/tel-1.png"><a href="https://wa.me/5511970281491" target="_blank">(11) 97028-1491</a></p>
+            <p><img src="~/lib/Img/mail-1.png"><a href="mailto: leonardo.mess@terra.com.br">leonardo.mess@terra.com.br</a></p>
+            <p><img src="~/lib/Img/link-1.png"><a href="https://www.linkedin.com/in/leonardo-messias-alves-a5261a15b/" target="_blank">Leonardo Messias Alves</a></p>
+            <p><img src="~/lib/Img/github-1.png"><a href="https://github.com/messiasleonardo" target="_blank">Github</a></p>
+            <p><img src="~/lib/Img/Ativo 1.png"><a href="http://lattes.cnpq.br/2030891144928504" target="_blank">Curriculum Lattes</a></p>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer>
+
+            <p><img src="~/lib/Img/22px-Flag_of_Brazil.svg.png"><a asp-controller="PerfilPt">Português</a></p>
+            <p><img src="~/lib/Img/23px-Flag_of_the_United_States.svg.png"><a asp-controller="PerfilEn">English</a></p>
+
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/scale.fix.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
